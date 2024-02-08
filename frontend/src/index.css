@@ -1,0 +1,35 @@
+* {  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  background: white;
+  background-color: white;
+
+
+}
+
+html::-webkit-scrollbar {
+  width: .5rem;
+
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 1rem;
+
+}

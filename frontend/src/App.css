@@ -1,0 +1,51 @@
+.spinner-loader{
+  width: 2rem;
+}
+
+.logincontainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background: rgb(77, 77, 77);
+  color: white;
+}
+.logincontainer h1{
+  font-size: 3rem ;
+  font-weight: 600;
+
+}
+.logincontainer label{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.logincontainer-btn{
+  padding: 2rem 4rem ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: .2rem solid black;
+  border-radius: 1rem;
+}
+.phone{
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-8%,-0%);
+  color: black;
+  /* padding: 2rem; */
+
+
+}
+.phone input {
+  padding:3rem;
+}
+
