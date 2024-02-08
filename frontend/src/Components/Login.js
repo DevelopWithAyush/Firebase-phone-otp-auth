@@ -11,6 +11,7 @@ const Login = () => {
     const [showotp, setShowotp] = useState(false);
     const [ph, setPh] = useState("");
     const [loader, setLoader] = useState(false);
+    const [user,setUser] = useState(false)
 
     useEffect(() => {
         initializeRecaptcha();
@@ -69,7 +70,9 @@ const Login = () => {
     return (
         <div className='logincontainer'>
             <div id="recaptcha-container"></div>
+        {user ?   <>
             <h1>Firebase Phone OTP verification</h1>
+           
 
             {showotp ? (
                 <>
@@ -99,6 +102,8 @@ const Login = () => {
                     </button>
                 </>
             )}
+            </> : <h1>Login successfully 👍</h1>}
+         
         </div>
     );
 };
