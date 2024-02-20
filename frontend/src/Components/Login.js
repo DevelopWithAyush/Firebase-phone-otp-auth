@@ -58,8 +58,10 @@ const Login = () => {
         window.confirmationResult
             .confirm(otp)
             .then((res) => {
-                console.log(res);
+                console.log(res.user.uid);
                 setLoader(false);
+                setUser(true)
+
             })
             .catch((err) => {
                 console.error("Error verifying OTP:", err);
@@ -70,7 +72,7 @@ const Login = () => {
     return (
         <div className='logincontainer'>
             <div id="recaptcha-container"></div>
-        {user ?   <>
+        {user ?( <h1>Login successfully 👍</h1>):(<>
             <h1>Firebase Phone OTP verification</h1>
            
 
@@ -102,7 +104,7 @@ const Login = () => {
                     </button>
                 </>
             )}
-            </> : <h1>Login successfully 👍</h1>}
+            </>)  }
          
         </div>
     );
